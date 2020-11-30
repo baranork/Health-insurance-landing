@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Button from "./Button.js";
+import NavBar from "./NavBar.js";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <NavBar />
+        <div className="container">
+          <div className="page-title left side">
+            <div className="text-block">
+              <div className="title">Healthcare is about people</div>
+              <div className="subtitle">
+                The most effective and easy to use platform that connects
+                doctors with patients all over the world
+              </div>
+              <Button />
+            </div>
+          </div>
+          <div className="right side"></div>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;

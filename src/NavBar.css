@@ -1,0 +1,41 @@
+.nav-bar {
+  color: aqua;
+  z-index: 999 !important   ;
+  left: 0;
+  display: flex;
+  position: relative;
+
+  top: 10%;
+  height: 90vh !important;
+}
+
+a {
+  text-decoration: none;
+  color: aqua;
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+#nav {
+  width: 100%;
+  float: left;
+  margin: 0 0 3em 0;
+  padding: 0;
+  list-style: none;
+}
+
+#nav li {
+  float: right;
+}
+
+#nav li a {
+  display: block;
+  padding: 8px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: wheat;
+  font-family: Arial, Helvetica, sans-serif;
+}
